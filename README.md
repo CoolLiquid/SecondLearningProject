@@ -28,7 +28,9 @@ okhttp使用
 ```java
         ImageLoaderManager.getmInstance(this).displayImage("url",imageView );
 ```
-    当然ImageLoaderManager类下包含如下重要的API<br>
+
+当然ImageLoaderManager类下包含如下重要的API:
+
 ```java
         /**
              * 根据Url显示，图片在ImageView中，同时设置显示的配置和设置图片的监听
@@ -42,5 +44,6 @@ okhttp使用
                     , DisplayImageOptions options
                     , ImageLoadingListener listener) {}
 ```
-    好处：我们应用层是使用我们自己封装的一套API，当我们不适用UniversialImageLoader ,我们使用Glide的时候，我们只在
+
+`好处`：我们应用层是使用我们自己封装的一套API，当我们不适用UniversialImageLoader ,我们使用Glide的时候，我们只在
     封装里面改，不影响我们应用层代码的使用。
