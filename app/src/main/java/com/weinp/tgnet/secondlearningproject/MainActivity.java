@@ -1,8 +1,16 @@
 package com.weinp.tgnet.secondlearningproject;
 
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+import com.weinp.tgnet.practicallibrary.lmageloader.ImageLoaderManager;
 import com.weinp.tgnet.practicallibrary.okhttp.CommonOkhttpClient;
 import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataHandle;
 import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataListener;
@@ -30,5 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 },null)));
+    }
+    public void ImageLoaderTest(){
+        /*ImageLoaderManager.getmInstance(this).displayImage("url",imageView );*/
     }
 }
