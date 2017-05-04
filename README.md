@@ -27,7 +27,7 @@ okhttp使用
     <br>使用如下：<br>
 ```java
         ImageLoaderManager.getmInstance(this).displayImage("url",imageView );
-```<br>
+```
     当然ImageLoaderManager类下包含如下重要的API<br>
 ```java
         /**
@@ -41,6 +41,6 @@ okhttp使用
             public  void displayImage(ImageView imageview, String url
                     , DisplayImageOptions options
                     , ImageLoadingListener listener) {}
-```<br>
+```
     好处：我们应用层是使用我们自己封装的一套API，当我们不适用UniversialImageLoader ,我们使用Glide的时候，我们只在
     封装里面改，不影响我们应用层代码的使用。
