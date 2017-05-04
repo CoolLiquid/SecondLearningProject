@@ -4,20 +4,16 @@ package com.weinp.tgnet.practicallibrary.okhttp;
  * Created by tgnet on 2017/5/3.
  */
 
-import com.example.myandroidlibrary.okhttp.https.HttpsUtils;
-import com.example.myandroidlibrary.okhttp.response.CommonJsonCallBack;
 
-import java.io.IOException;
+import com.weinp.tgnet.practicallibrary.okhttp.https.HttpsUtils;
+import com.weinp.tgnet.practicallibrary.okhttp.response.CommonJsonCallBack;
+
 import java.util.concurrent.TimeUnit;
-
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
-
 import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.Response;
 
 /**
  * @author wienp

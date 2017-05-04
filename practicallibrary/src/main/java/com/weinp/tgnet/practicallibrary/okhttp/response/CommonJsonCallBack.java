@@ -7,23 +7,16 @@ package com.weinp.tgnet.practicallibrary.okhttp.response;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.example.myandroidlibrary.okhttp.exception.OkHttpException;
-import com.example.myandroidlibrary.okhttp.listener.DisposeDataHandle;
-import com.example.myandroidlibrary.okhttp.listener.DisposeDataListener;
+import com.weinp.tgnet.practicallibrary.adutil.ResponseEntityToModule;
+import com.weinp.tgnet.practicallibrary.okhttp.exception.OkHttpException;
+import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataHandle;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.Objects;
-import java.util.Properties;
-
-import adutil.ResponseEntityToModule;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
-import okhttp3.ResponseBody;
-
 /**
  * @author wienp
  * @function
