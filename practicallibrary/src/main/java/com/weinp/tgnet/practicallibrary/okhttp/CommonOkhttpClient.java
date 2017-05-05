@@ -6,6 +6,7 @@ package com.weinp.tgnet.practicallibrary.okhttp;
 
 
 import com.weinp.tgnet.practicallibrary.okhttp.https.HttpsUtils;
+import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataHandle;
 import com.weinp.tgnet.practicallibrary.okhttp.response.CommonJsonCallBack;
 
 import java.util.concurrent.TimeUnit;
@@ -51,4 +52,7 @@ public class CommonOkhttpClient {
     }
 
 
+    public static void get(Request request, DisposeDataHandle disposeDataHandle) {
+        sendRequest(request,new CommonJsonCallBack(disposeDataHandle));
+    }
 }
