@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.weinp.tgnet.secondlearningproject">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".YwqApplication"
         android:allowBackup="true"

@@ -5,6 +5,7 @@ import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataHandle;
 import com.weinp.tgnet.practicallibrary.okhttp.listener.DisposeDataListener;
 import com.weinp.tgnet.practicallibrary.okhttp.request.CommonRequest;
 import com.weinp.tgnet.practicallibrary.okhttp.request.RequestParams;
+import com.weinp.tgnet.secondlearningproject.module.recommoand.BaseRecommandModule;
 import com.weinp.tgnet.secondlearningproject.module.recommoand.RecommandModule;
 
 /**
@@ -19,10 +20,11 @@ public class RequestCenter {
 
     /**
      * 首页请求接口
+     *
      * @param listener
      */
     public static void requestReCommondData(DisposeDataListener listener) {
-        postRequest(HttpConstants.HOME_RECOMMAND, null, listener, RecommandModule.class);
+        postRequest(HttpConstants.HOME_RECOMMAND, null, listener, BaseRecommandModule.class);
 
     }
 }
